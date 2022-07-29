@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
-   // console.log( "document loaded" );
+
     $('#final_pass').val('Your new password will appear here.');
 });
 
@@ -202,16 +202,6 @@ function save_settings(bool) {
         }
     }
 }
-
-function OnCopy(){
-	var copyText = $("final_pass");
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  document.execCommand("copy");
-}
-
 
 function copyText(){ 
     var $temp = $("<input>");
